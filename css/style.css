@@ -1,0 +1,551 @@
+/*==========GRID==========*/
+.container-full {
+	width: 100%;
+}
+.container {
+	width: 92%;
+	margin-left: 4%;
+	margin-right: 4%;
+	position: relative;
+}
+.bar {
+	padding-top: 20px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7,
+.g8,
+.g9,
+.g10,
+.g11,
+.g12 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.g1 {
+	width: 6.333%;
+}
+.g2 {
+	width: 14.667%;
+}
+.g3 {
+	width: 23.0%;
+}
+.g4 {
+	width: 31.333%;
+}
+.g5 {
+	width: 39.667%;
+}
+.g6 {
+	width: 48.0%;
+}
+.g7 {
+	width: 56.333%;
+}
+.g8 {
+	width: 64.667%;
+}
+.g9 {
+	width: 73.0%;
+}
+.g10 {
+	width: 81.333%;
+}
+.g11 {
+	width: 89.667%;
+}
+.g12 {
+	width: 98.0%;
+}
+.gfull {
+	width: 100%;
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.overhidden {
+	overflow: hidden;
+}
+.lg {
+	margin-left: 0%;
+	padding-left: 1%;
+}
+.rg {
+	margin-right: 0%;
+	padding-right: 1%;
+}
+
+/*==========STYLE==========*/
+/*---Teks---*/
+@font-face{
+	font-family:segoe ui;
+	src: url(../font/segoeui.ttf);
+}
+@font-face{
+	font-family: roboto slab;
+	src: url(../font/RobotoSlab-Light.ttf);
+}
+body {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: segoe ui, open sans, helvetica;
+	color: #D5D96C;
+}
+h1,h2,h3,.dest-text {
+	font-family: 'roboto slab', open sans;
+}
+h1 {
+	font-size: 3em;
+}
+h1.right {
+	padding-top: 1em;
+}
+h2 {
+	font-size: 2.25em;
+}
+h3 {
+	font-size: 1.75em;
+}
+h4 {
+	font-size: 1.125em;
+}
+hr {
+	border : 1px solid #D5D96C;
+}
+p {
+	font-size: 0.875em;
+}
+a {
+	font-size: inherit;
+	text-decoration: none;
+	font-weight: 700;
+	color: inherit;
+}
+a:hover {
+	opacity: 0.8;
+}
+.light {
+	font-weight: 100;
+}
+.bold {
+	font-weight: 700;
+}
+.normal {
+	font-weight: 400;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+
+/*---Layout---*/
+.fresh {
+	padding: 0;
+	margin: 0;
+}
+.rightf {
+	float: right;
+}
+.leftf {
+	float: left;
+}
+
+/*---Section---*/
+#banner {
+	width: 100%;
+	height: 110vh;
+	/*background:
+		linear-gradient(
+	    rgba(255, 255, 255, 0.2),
+	    rgba(255, 255, 255, 0.2)
+	    ),
+	    url(../img/sunset.jpg) no-repeat fixed; 
+	*/
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0.5),
+	    rgba(0, 0, 0, 0.1)
+	    );
+	background-size: 100% 100%;
+	background-position: center;
+	z-index: -1;
+}
+.content {
+	width: 100%;
+	background-color: #7c8c03;
+	float: left;
+}
+.paralax {
+	width: 100%;
+	float: left;
+	min-height: 600px;
+	text-align: center;	
+}
+#paralax1 {	
+	width: 100%;
+	background:
+		linear-gradient(
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
+	    ),
+	    url(../img/ngobaran.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
+}
+#paralax2 {
+	width: 100%;
+	background:
+		linear-gradient(
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
+	    ),
+	    url(../img/sunset.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;	
+	background-position: center;	
+}
+#kontak {
+	background:
+		linear-gradient(
+	    rgba(0, 0, 0, 0.7),
+	    rgba(0, 0, 0, 0.7)
+	    ),
+	    url(../img/map.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+}	
+#footer-copy {
+	background-color: #465902;
+}
+#copy-content {
+	float: left;
+}
+#copy-design {
+	float: right;
+}
+
+/*Section Content*/
+.dest-text {
+	position: absolute;
+	width: 100%;
+	color: #ffffff;
+}
+#aktivitas img {
+	opacity: .5;
+	transition: opacity .5s ease;
+	z-index: 2;
+}
+#aktivitas img:hover {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+.paralax h1.highlight{
+	font-size: 5em;
+	font-weight: 400;
+	padding-top: 5%;
+	margin-bottom: 1%;
+	color: #D5D96C;
+	overflow: hidden;
+}
+.paralax p.desc {
+	font-size: 2em;
+	color: #D5D96C;
+	overflow: hidden;
+}
+.aktivitas-nama {
+	text-align: center;
+	overflow: hidden;
+}
+#kntk {
+	padding-top: 0em;
+	margin-top: 0.35em;
+	margin-bottom: 1em;
+}
+.label {
+	width: auto;
+	margin: 10px auto;
+	padding: 0.4em 0em 0.4em 0em;
+	background-color: #FFFDF8;
+	color: #7c8c03;
+	border-radius: 10px;
+	position: relative;
+	opacity: 0;
+	transition: opacity .5s ease;
+}
+.kontak-icon {
+	opacity: 0.6;
+	transition: opacity .5s ease;
+}
+.kontak-icon:hover {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+.kontak-icon:hover ~ .label {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+
+/*---Elemen---*/
+/*Ukuran*/
+.strech {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.hd {
+	width: 100%;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.sd {
+	width: 100%;
+	padding-bottom: 75%;
+	position: relative;
+}
+.sq {
+	width: 100%;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+/*Bentuk*/
+.round {
+	border-radius: 5px;
+}
+.circle {
+	border-radius: 100%;
+}
+
+/*Margin*/
+.space {
+	padding-bottom: 50px;
+	position: relative;
+	float: left;
+}
+
+/*Bangun*/
+.aktivitas {
+	width: 80%;
+	padding-bottom: 80%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+.kontak-icon {
+	background-color: #7c8c03;
+	margin: 0px auto;
+	width: 35%;
+	height: 35%;
+	position: relative;
+}
+
+.kontak-img {
+	width: 60%;
+	height: 60%;
+	padding: 20%;
+}
+
+
+/*Tombol*/
+.buton  {
+	background-color: #D5D96C;
+	color: #7c8c03;
+	font-family: chaparral pro, Open Sans;
+	border: 0px;
+	padding: 0.4em;
+	margin: 0.4em;
+	font-size: 1.125em;
+	font-weight: 400;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.buton:hover  {
+	opacity: 0.8;
+}
+
+.buton.more {
+	padding: .5em;
+	margin-left: -0.1em;
+}
+
+.tiket {
+	background-color: #465902;
+	color: #D5D96C;
+	padding: 0.5em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding: 0.4em 0em 0.4em 0em;
+	width: 100%;
+	float: left;
+}
+
+/*----SLIDER----*/
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+#slider { 
+	overflow: hidden;  
+}
+#slider div { 
+  	position: relative;
+  	overflow: hidden;
+  	width: 500%;
+  	margin: 0;
+  	left: 0;
+  	text-align: left;
+  	font-size: 0;  	
+  	animation: 30s slidy infinite; 
+  	z-index: -2;
+}
+#slider div img { 
+	width: 20%;
+	height: 110vh;
+	float: left;
+}
+#slider img{
+	width: 100%;
+}
+/*---KOMENTAR---*/
+#peoplesay {
+	min-height: 400px;
+	text-align: center;
+}
+.people {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	width: 150px;
+	height: 150px;
+	background-size: auto 100%;
+	opacity: .5;
+	transition: opacity .5s ease;
+}
+#peoplesay p {
+	margin:auto;
+	width: 90%;
+}
+#peoplesay .g4:hover .people {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+.shadow {
+	box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3)
+}
+
+/*---footer---*/
+#footer ul {
+	padding-left: 0;
+}
+#footer ul li {
+	list-style-type: none;
+}
+
+
+/*--TITLE--*/
+.judul {
+	position: absolute;
+	padding-top: 10em;
+}
+.judul h1 {
+	font-size: 4em;
+	font-weight: 600;
+}
+
+figure figcaption{
+	background-color: #193149;
+	position: absolute;
+	line-height: 19px;
+	left: 0;
+	height: 100%;
+	width: 60%;
+	padding: 0 11px;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	-o-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	-o-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	line-height: 19px;
+	font-size: 13px;
+	padding: 11px;
+}
+figure img {
+	position: relative;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	vertical-align: top;
+}
+figure:hover img {
+	-webkit-transform: translateX(25%);
+	-moz-transform: translateX(25%);
+	-ms-transform: translateX(25%);
+	transform: translateX(25%);
+}
+
+figure:hover figcaption {
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	-o-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}

@@ -1,0 +1,167 @@
+@media only screen and (max-width: 768px) {
+	/*---Grid---*/
+	.g1 {
+		width: 23.0%;
+	}
+	.g2 {
+		width: 48.0%;
+	}
+	.g3,
+	.g4,
+	.g5,
+	.g6,
+	.g7,
+	.g8,
+	.g9,
+	.g10,
+	.g11,
+	.g12 {
+		width: 98.0%;
+	}
+
+	/*---Style---*/
+	header ul#nav-right {
+		position: absolute;
+		margin: 0px 0px 0px -20px;
+		padding-top: 1em;
+		width: 100%;
+		height: 100vh;
+		text-align: left;
+		background-color: rgba(0,0,0,0.9);
+		display: none;
+	}
+	header ul#nav-right li {
+		display: list-item;
+		height: 40px;
+	}
+	header ul#nav-right li#mo-nav {
+		display: block;
+		cursor: pointer;
+		font-size: 1em;
+	}
+	header ul#nav-right li#mo-nav a {
+		color: #5C5C5C;
+	}
+	header ul li img {
+		display: inline-block;
+	}
+	header ul#nav-left {
+		margin-top: 8px;
+	}	
+	header ul#nav-left li#mo-btn {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 1.3em;
+	}
+	header.smaller ul li a{
+		font-size: 1.3em;
+		color: #FFFDF8;
+	}
+	#nav-left:target ~ #nav-right {
+		display: none;
+	}
+	#nav-right:target {
+		display: block;
+	}
+	#slider figure img {
+		height: 115vh;
+	}
+	.paralax h1.highlight{
+		font-size: 2.6em;
+		padding-top: 17%;
+	}
+	.paralax p.desc {
+		font-size: 1.5em;
+	}
+	.aktivitas-nama {
+		border-bottom: 1px solid;
+		padding-bottom: 1em;
+		margin-bottom: 20px;
+	}
+	#kontak {
+		background-size: auto 80%;
+	}
+	#copy-content {
+		float: none;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+	#copy-design {
+		float: none;
+		text-align: center;
+	}
+		
+	.modal-copy {
+		max-height: 300px;
+	}
+	.modal h3 {
+		font-size: 1.125em;
+	}
+	.buton {
+		font-size: 1em;
+	}
+	.segitiga-a{
+		margin-top: -14vh;
+		border-bottom: 15vh solid #7c8c03;
+		border-left: 64vh solid transparent;
+	}
+	.segitiga-b{	
+		border-top: 15vh solid #7c8c03;
+		border-right: 60vh solid transparent;
+	}
+	.modal-copy {
+		max-height: 90%;
+	}
+	.modal-header h3{
+		margin-top: 17.5px;
+		margin-left: 2.5px;
+		font-size: 18px;
+	}
+	#modal-close {
+		padding-top: 17.5px;
+		height: 42.5px;
+		font-size: 18px;
+	}	
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*---Grid---*/
+	.g1 {
+		width: 14.667%;
+	}
+	.g2 {
+		width: 31.333%;
+	}
+	.g3 {
+		width: 48.0%;
+	}
+	.g4 {
+		width: 31.333%;
+	}
+	.g6 {
+		width: 48.0%;
+	}
+	.g5,
+	.g7,
+	.g8,
+	.g9,
+	.g10,
+	.g11,
+	.g12,
+	.sidebar {
+		width: 98.0%;
+	}	
+	/*---Style---*/
+
+}
+
+/*Fix Scrolling Bug On Webkit/Chromium*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#paralax1 {	
+		background-attachment: scroll;
+	}
+	#paralax2 {
+		background-attachment: scroll;
+	}
+}

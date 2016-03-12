@@ -1,0 +1,71 @@
+/*---Navigasi---*/
+header {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 100;
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0.3),
+	    rgba(0, 0, 0, 0)
+	    );		
+	transition: all 0.2s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	/*Fix Scrolling Bug On Webkit/Chromium*/
+	-webkit-transform: translateZ(0);
+}
+header.smaller {
+	position: fixed;
+	background: linear-gradient(
+	    rgba(0, 0, 0, 0),
+	    rgba(0, 0, 0, 0)
+	    );	
+	background-color: #465902;	
+	height: 60px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+header ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+header ul li {
+	display: inline;
+	height: 50px;
+}
+header ul li a {
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #FFFDF8;
+	z-index: 3;
+	transition: font 0.3s ease
+}
+header.smaller ul li a{
+	color: #D5D96C;
+	font-size: 1em;
+}
+header ul#nav-left {
+	float: left;
+}
+header ul#nav-left li#mo-btn {
+	display: none;
+}
+header ul#nav-right {
+	float: right;
+}
+header ul#nav-right a {
+	padding-left: 1em;
+}
+header ul#nav-right li#mo-nav {
+	display: none;
+}
+header ul li img {
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+	display: none;
+}
