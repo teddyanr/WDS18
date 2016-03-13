@@ -69,3 +69,7 @@ header ul li img {
 	margin-right: 16px;
 	display: none;
 }
+li form{
+	float: right;
+	padding-left: 50px;
+}

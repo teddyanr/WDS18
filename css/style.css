@@ -42,6 +42,10 @@
 .g3 {
 	width: 23.0%;
 }
+.g3 .width{
+	width: 30px;
+	height: auto;
+}
 .g4 {
 	width: 31.333%;
 }
@@ -118,13 +122,13 @@ h1,h2,h3,.dest-text {
 	font-family: 'roboto slab', open sans;
 }
 h1 {
-	font-size: 3em;
-}
-h1.right {
-	padding-top: 1em;
+	font-size: 1.5em;
 }
 h2 {
 	font-size: 2.25em;
+}
+h2.right {
+	padding-top: 1em;
 }
 h3 {
 	font-size: 1.75em;
@@ -165,6 +169,7 @@ a:hover {
 .right {
 	text-align: right;
 }
+/*---Profil---*/
 
 /*---Layout---*/
 .fresh {
@@ -382,7 +387,7 @@ a:hover {
 	border: 0px;
 	padding: 0.4em;
 	margin: 0.4em;
-	font-size: 1.125em;
+	font-size: 0.8em;
 	font-weight: 400;
 	cursor: pointer;
 	border-radius: 5px;
