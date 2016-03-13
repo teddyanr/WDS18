@@ -127,7 +127,7 @@ h1 {
 h2 {
 	font-size: 2.25em;
 }
-h2.right {
+h2.left {
 	padding-top: 1em;
 }
 h3 {
@@ -170,6 +170,23 @@ a:hover {
 	text-align: right;
 }
 /*---Profil---*/
+.content-profil{
+	width:100%;
+}
+.profil-logo {
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left: 10%;
+	margin-right:2em;
+	float:left;
+}
+.profil-teks{
+	margin-top:4%;
+	width:60%;
+	float:left;
+}
+/*---Kontak---*/
+
 
 /*---Layout---*/
 .fresh {
@@ -207,6 +224,7 @@ a:hover {
 	background-color: #7c8c03;
 	float: left;
 }
+/*---paralax---*/
 .paralax {
 	width: 100%;
 	float: left;
@@ -237,6 +255,7 @@ a:hover {
 	background-size: 100% 100%;	
 	background-position: center;	
 }
+
 #kontak {
 	background:
 		linear-gradient(
@@ -268,7 +287,7 @@ a:hover {
 	transition: opacity .5s ease;
 	z-index: 2;
 }
-#aktivitas img:hover {
+#aktivitas img {
 	opacity: 1;
 	transition: opacity .5s ease;
 }
@@ -468,7 +487,7 @@ a:hover {
 	margin:auto;
 	width: 90%;
 }
-#peoplesay .g4:hover .people {
+#peoplesay .g4 .people {
 	opacity: 1;
 	transition: opacity .5s ease;
 }
