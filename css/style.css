@@ -116,7 +116,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	font-family: segoe ui, open sans, helvetica;
-	color: #D5D96C;
+	color: #000000;
 }
 h1,h2,h3,.dest-text {
 	font-family: 'roboto slab', open sans;
@@ -137,7 +137,7 @@ h4 {
 	font-size: 1.125em;
 }
 hr {
-	border : 1px solid #D5D96C;
+	border : 1px solid #000000;
 }
 p {
 	font-size: 0.875em;
@@ -221,7 +221,7 @@ a:hover {
 }
 .content {
 	width: 100%;
-	background-color: #7c8c03;
+	background-color: #c1c1c1;
 	float: left;
 }
 /*---paralax---*/
@@ -267,7 +267,7 @@ a:hover {
 	background-position: center;
 }	
 #footer-copy {
-	background-color: #465902;
+	background-color: #5c5c5c;
 }
 #copy-content {
 	float: left;
@@ -317,8 +317,8 @@ a:hover {
 	width: auto;
 	margin: 10px auto;
 	padding: 0.4em 0em 0.4em 0em;
-	background-color: #FFFDF8;
-	color: #7c8c03;
+	background-color: #000000;
+	color: #cdcdcd;
 	border-radius: 10px;
 	position: relative;
 	opacity: 0;
@@ -384,7 +384,7 @@ a:hover {
 }
 
 .kontak-icon {
-	background-color: #7c8c03;
+	background-color: #5c5c5c;
 	margin: 0px auto;
 	width: 35%;
 	height: 35%;
@@ -400,8 +400,8 @@ a:hover {
 
 /*Tombol*/
 .buton  {
-	background-color: #D5D96C;
-	color: #7c8c03;
+	background-color: #454343;
+	color: #ffffff;
 	font-family: chaparral pro, Open Sans;
 	border: 0px;
 	padding: 0.4em;
@@ -487,7 +487,7 @@ a:hover {
 	margin:auto;
 	width: 90%;
 }
-#peoplesay .g4:hover .people {
+#peoplesay .g4 .people {
 	opacity: 1;
 	transition: opacity .5s ease;
 }
@@ -574,4 +574,49 @@ figure:hover figcaption {
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
 	-o-transition: -moz-transform 0.4s, opacity 0.1s;
 	transition: transform 0.4s, opacity 0.1s;
+}
+
+/* ===== Berita ======= */
+.content-columns {
+	list-style: none;
+
+	-moz-column-count: 4;
+  	-webkit-column-count: 4;
+  	column-count: 4;
+
+  	-webkit-column-gap: 15px;
+  	-moz-column-gap: 15px;
+  	column-gap: 15px;
+
+   
+}
+
+.boxed {
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+	overflow: hidden;
+ 	display:inline-block;
+	-webkit-column-break-inside:avoid;
+	-moz-column-break-inside:avoid;
+	column-break-inside:avoid;
+}
+
+.boxed img {
+	width: 100%;
+}
+
+.boxed .description {
+	padding: 15px;
+	margin-top: 10px;
+}
+
+.boxed .description h1 {
+	font-size: 16px;
+}
+
+.boxed .description p {
+	font-size: 14px;
+	line-height: 21px;
 }
