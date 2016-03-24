@@ -355,6 +355,23 @@ a:hover {
 .circle {
 	border-radius: 100%;
 }
+.segitiga-a{
+	margin-top: -10vh;
+	width: 0; 
+	height: 0; 
+			
+	border-bottom: 10vh solid #5c5c5c; 
+	border-left: 220vh solid transparent;
+	float: right;
+}
+.segitiga-b{
+	width: 0; 
+	height: 0; 
+			
+	border-top: 11vh solid #5c5c5c; 
+	border-right: 220vh solid transparent;
+	float: left;
+}
 
 /*Margin*/
 .space {
@@ -456,7 +473,7 @@ a:hover {
 #slider img{
 	width: 100%;
 }
-/*---KOMENTAR---*/
+/*---BERITA---*/
 #peoplesay {
 	min-height: 400px;
 	text-align: center;
